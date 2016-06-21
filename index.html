@@ -1,217 +1,264 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  
-<title> Hotel Menu</title> 
-</head>
-<style type="text/css">
+	<meta charset="utf-8">
 
-	* {
-  		
-  		font-family: Helvetica;
-  		box-sizing: border-box;
-  	}
-  	body {
-		margin:0px;
-		padding: 0px;	
-		}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+      box-sizing: border-box;
+      font-family: Helvetica;
 
-	h1 {
- 		 margin-bottom: 30px;
- 		 text-align: center;
- 		 font-size: 175%;
- 		}
- 	/*.resp {
- 		position: relative;
-  		margin-bottom:10px;
-  		margin-left: 5px;
-  		margin-right: 5px;
-  		background-color: #663399;
-  		padding:5px;
-   		overflow: auto;
-  		border: 1px solid black;
-  		}*/
-  	div.sec {
-  		position: absolute;
-  	    right: 0;
-  	    top: 0;
-  	    margin-top: 0;
-  		background-color: #D2691E;
-  		font-size: 125%;
-  		width: 80px;
-  	    float: right;
+    }
 
-  	}
-	.data {
-        
-        margin-top:20 10 5 10px;
-	}
+h1 {
+    margin-bottom: 30px;
+		text-align: center;
+    font-size: 175%;
+}
+
+body {
+
+    background-color: grey;
+
+}
+
+p {
+	padding: 10px;
+	margin: 0;
+}
+
+.container {
+	border: 5px soild red;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+Div > section {
+	border:	1px solid black;
+	background-color: #0066FF;
+ 	width: 100%;
+	height: 300px;
+	color: white;
+	position: relative;
+	overflow: auto;
+}
+
+.data1 {
+	border: 1px solid black;
+	text-align: center;
+	width: 30%;
+	margin-left: 70%;
+	font-weight: bold;
+	font-size: 125%;
+	padding: 5px;
+	background-color: #660000;
+}
+
+.data2 {
+  border: 1px solid black;
+  text-align: center;
+  width: 30%;
+  margin-left: 70%;
+  font-weight: bold;
+  font-size: 125%;
+  padding: 5px;
+  background-color: #990000;
+}
+
+
+.data3 {
+  border: 1px solid black;
+  text-align: center;
+  width: 30%;
+  margin-left: 70%;
+  font-weight: bold;
+  font-size: 125%;
+  padding: 5px;
+  background-color: #FF9933;
+}
+
+
+
 .row {
 	width: 100%;
 }
-/********** Large devices only **********/
+
+/* Desktop view */
+
 @media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12
-  	 {
-        float: left;
-        position: relative;
-  		background-color: #663399;
-  		padding:5px;
-  		border: 1px solid black;
-        height: 200px;
-         	  }
-	  .col-lg-1 {
-	   			 width: 8.33%;
-	  			}
-	  .col-lg-2 {
-	    		width: 16.66%;
-	 			 }
-	  .col-lg-3 {
-	    		width: 25%;
-	 			 }
-	  .col-lg-4 {
-	   			 width: 33.33%;
-	 			 }
-	  .col-lg-5 {
-	 		    width: 41.66%;
-	 			 }
-	  .col-lg-6 {
-	 		   width: 50%;
-	 			 }
-	  .col-lg-7 {
-	 		   width: 58.33%;
-	 			 }
-	  .col-lg-8 {
-	 		   width: 66.66%;
-	 			 }
-	  .col-lg-9 {
-			    width: 74.99%;
-				  }
-	  .col-lg-10 {
-	 		   width: 83.33%;
-	  			}
-	  .col-lg-11 {
-			    width: 91.66%;
-				  }
-	  .col-lg-12 {
-			    width: 100%;
-				  }
-	}
-/********** Medium devices only **********/
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+
+}
+
+/* Tablet view */
+
+
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-        float: left;
-        position: relative;
-  		background-color: #663399;
-  		padding:5px;
-  		border: 1px solid black;
-        height: 200px;
-        margin-bottom: 20px;
-      }
-	  .col-md-1 {
-	    width: 8.33%;
-	  }
-	  .col-md-2 {
-	    width: 16.66%;
-	  }
-	  .col-md-3 {
-	    width: 25%;
-	  }
-	  .col-md-4 {
-	    width: 33.33%;
-	  }
-	  .col-md-5 {
-	    width: 41.66%;
-	  }
-	  .col-md-6 {
-	    width: 50%;
-	  }
-	  .col-md-7 {
-	    width: 58.33%;
-	  }
-	  .col-md-8 {
-	    width: 66.66%;
-	  }
-	  .col-md-9 {
-	    width: 74.99%;
-	  }
-	  .col-md-10 {
-	    width: 83.33%;
-	  }
-	  .col-md-11 {
-	    width: 91.66%;
-	  }
-	  .col-md-12 {
-	    width: 100%;
-	  }
-	}
-	
-	@media (max-width: 767px) {
-  .col-lw-1, .col-lw-2, .col-lw-3, .col-lw-4, .col-lg-5, .col-lw-6, .col-lw-7, .col-lw-8, .col-lw-9, .col-lw-10, .col-lw-11, .col-lw-12
-  	 {
-        float: left;
-        position: relative;
-  		background-color: #663399;
-  		padding:5px;
-  		border: 1px solid black;
-        height: 200px;
-        margin-bottom: 20px;
- 	  }
-	  .col-lw-1 {
-	   			 width: 8.33%;
-	  			}
-	  .col-lw-2 {
-	    		width: 16.66%;
-	 			 }
-	  .col-lw-3 {
-	    		width: 25%;
-	 			 }
-	  .col-lw-4 {
-	   			 width: 33.33%;
-	 			 }
-	  .col-lw-5 {
-	 		    width: 41.66%;
-	 			 }
-	  .col-lw-6 {
-	 		   width: 50%;
-	 			 }
-	  .col-lw-7 {
-	 		   width: 58.33%;
-	 			 }
-	  .col-lw-8 {
-	 		   width: 66.66%;
-	 			 }
-	  .col-lw-9 {
-			    width: 74.99%;
-				  }
-	  .col-lw-10 {
-	 		   width: 83.33%;
-	  			}
-	  .col-lw-11 {
-			    width: 91.66%;
-				  }
-	  .col-lw-12 {
-			    width: 100%;
-				  }
-	}	
+    float: left;
+  }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* Mobile view */
+
+
+@media (max-width: 767px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+ 	float: left;
+  }
+
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 74.99%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
 
 </style>
+
+</head>
 <body>
-
-	<h1> Our Menu</h1>
-     <div class="row">
-	<div class="col-lg-4 col-md-6 col-lw-12""><div class="sec">Chicken</div>
-			<p class="data"> The chicken (Gallus gallus domesticus) is a type of domesticated fowl, a subspecies of the red junglefowl. It is one of the most common and widespread domestic animals, with a population of more than 19 billion as of 2011. Humans keep chickens primarily as a source of food, consuming both their meat and their eggs</p>
+	<h1>Our Menu</h1>
+	<div class="row">
+	<div class="container col-lg-4 col-md-6 col-sm-12">
+		<section>
+		<div class="data1">
+			Chicken
+		</div>
+		<p> The chicken (Gallus gallus domesticus) is a type of domesticated fowl, a subspecies of the red junglefowl. It is one of the most common and widespread domestic animals, with a population of more than 19 billion as of 2011. Humans keep chickens primarily as a source of food, consuming both their meat and their eggs 
+		</p>
+		</section>
 	</div>
-	
-	<div class="col-lg-4 col-md-6 col-lw-12""><div class="sec">Beef</div>
-			<p class="data"> Beef muscle meat can be cut into roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.) Some cuts are processed (corned beef or beef jerky), and trimmings, usually mixed with meat from older, leaner cattle, are ground, minced or used in sausages..</p>
+	<div class="container col-lg-4 col-md-6 col-sm-12">
+		<section>
+		<div class="data2">
+			Beef
+		</div>
+		<p>
+			Beef muscle meat can be cut into roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.) Some cuts are processed (corned beef or beef jerky), and trimmings, usually mixed with meat from older, leaner cattle, are ground, minced or used in sausages..
+		</p>
+		</section>
 	</div>
-
-	<div class="col-lg-4 col-md-12 col-lw-12"><div class="sec">Sushi</div>
-				<p class="data"> It is often prepared with raw seafood, but some common varieties of sushi use cooked ingredients or are vegetarian. Raw fish (or occasionally other meat) sliced and served without rice is called "sashimi". Sushi is often served with pickled ginger (ガリ gari), wasabi, and soy sauce.</p>
+	<div class="container col-lg-4 col-md-12 col-sm-12">
+		<section>
+		<div class="data3">
+			Sushi
+		</div>
+		<p>
+			It is often prepared with raw seafood, but some common varieties of sushi use cooked ingredients or are vegetarian. Raw fish (or occasionally other meat) sliced and served without rice is called "sashimi". Sushi is often served with pickled ginger (ガリ gari), wasabi, and soy sauce.
+		</p>
+		</section>
 	</div>
 	</div>
 </body>
